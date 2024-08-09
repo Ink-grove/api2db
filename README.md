@@ -4,7 +4,8 @@
 
 ## 架构
 
-![http2db架构简介](https://github.com/Ink-grove/http2db/img/Architecture.png)
+![http2db架构简介](https://github.com/Ink-grove/http2db/blob/main/img/Architecture.png))
+
 
 ## 特点
 
