@@ -1,0 +1,22 @@
+DBConfig:
+  DbType: mysql
+  LogMode:
+  Dsn: root:Huacheng!987@tcp(127.0.0.1:3309)/tzzhian_db
+  Active: 5
+  Idle: 5
+  IdleTimeout: 60s
+
+
+# 最大处理池：同时可处理的最大调用量，api接口调用 / sql调用 【注意：该值过高可能会将对方服务调崩】
+MaxPool: 1000
+# 特殊字符处理开关：开启后将会根据内置的特殊处理正则函数：SpecialDataDeal，根据内置规则对数据进行相应处理
+SpecialChar: true
+
+# 快速过滤模式开启状态：开启后将会将源数据预先进行md5值存取来用于比对，这样能够加快过滤速度并且不用每次实时数据库查询，但缺点是当同步的数据体量过大时非常消耗内存资源 【注意取舍问题】
+QuickFilteringMode: true
+# 数据分析参数
+DataAnalyze:
+  # 最大处理信号量：表示同时运行数据分析的最大任务数
+  MaxSemaphore: 100
+  # 最大处理数据量：每个数据分析任务的最大同时处理数据量
+  MapperMaxGoroutines: 100
